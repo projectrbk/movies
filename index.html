@@ -57,18 +57,72 @@
         </p>
         <button>x</button>
       </div>
+      <div class="movie">
+        <h3>jumanji</h3>
+        <img
+          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
+          doloribus repellendus sed
+        </p>
+        <button>x</button>
+      </div>
+      <div class="movie">
+        <h3>jumanji</h3>
+        <img
+          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
+          doloribus repellendus sed
+        </p>
+        <button>x</button>
+      </div>
+      <div class="movie">
+        <h3>jumanji</h3>
+        <img
+          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
+          doloribus repellendus sed
+        </p>
+        <button>x</button>
+      </div>
+      <div class="movie">
+        <h3>jumanji</h3>
+        <img
+          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
+          doloribus repellendus sed
+        </p>
+        <button>x</button>
+      </div>
     </div>
     <script>
-      let movie = localStorage.getItem("name");
-      let photo = localStorage.getItem("img");
-      let dess = localStorage.getItem("description");
+      
+      let movie = JSON.parse(localStorage.getItem("movie"));
       console.log(movie);
-      $(".container").append(`
-        <div class="movie">
-          <h3>${movie}</h3>
-          <img src="${photo}" alt="">
-          <p>${dess}</p>
-        </div>`);
+
+      var film = movie.map(
+        (m) =>
+          ` <div class="movie" >
+          <h3>${m.name}</h3>
+          <img src="${m.Image}" alt="" />
+          <p>${m.des}</p>
+          <button onClick= remove(${m.id})>x</button>
+        </div>`
+      );
+      
+      console.log(film);
+      $(".container").append(film);
     </script>
   </body>
 </html>
