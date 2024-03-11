@@ -31,6 +31,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
           doloribus repellendus sed
         </p>
+        <button>x</button>
       </div>
       <div class="movie">
         <h3>jumanji</h3>
@@ -42,6 +43,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
           doloribus repellendus sed
         </p>
+        <button>x</button>
       </div>
       <div class="movie">
         <h3>jumanji</h3>
@@ -53,41 +55,20 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
           doloribus repellendus sed
         </p>
-      </div>
-      <div class="movie">
-        <h3>jumanji</h3>
-        <img
-          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
-          alt=""
-        />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
-          doloribus repellendus sed
-        </p>
-      </div>
-      <div class="movie">
-        <h3>jumanji</h3>
-        <img
-          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
-          alt=""
-        />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
-          doloribus repellendus sed
-        </p>
-      </div>
-      <div class="movie">
-        <h3>jumanji</h3>
-        <img
-          src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp"
-          alt=""
-        />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et
-          doloribus repellendus sed
-        </p>
+        <button>x</button>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script>
+      let movie = localStorage.getItem("name");
+      let photo = localStorage.getItem("img");
+      let dess = localStorage.getItem("description");
+      console.log(movie);
+      $(".container").append(`
+        <div class="movie">
+          <h3>${movie}</h3>
+          <img src="${photo}" alt="">
+          <p>${dess}</p>
+        </div>`);
+    </script>
   </body>
 </html>
