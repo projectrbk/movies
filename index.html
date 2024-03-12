@@ -31,33 +31,45 @@
             </div>
         </nav>
         <div class="form-box">
-            <div class="Login-container" id="Login">
+
+
+            <div class="register-container" id="register">
                 <div class="top">
-                    <span>Don't Have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                    <header>Login</header> 
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="bx bx-user"></i> 
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="bx bx-user"></i> 
+                    </div>
                 </div>
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Username or Email">
-                    <i class="bx bx-user"></i> 
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i> 
                 </div>
                 <div class="input-box">
                     <input type="password" class="input-field" placeholder="Password">
                     <i class="bx bx-lock-alt"></i> 
                 </div>
                 <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In">
+                    <input type="submit" class="submit" value="Register">
                 </div>
                 <div class="two-col">
                     <div class="one">
-                        <input type="checkbox" name="" id="login-check">
-                        <label for="login-check"> Remember Me</label>
+                        <input type="checkbox" name="" id="register-check">
+                        <label for="register-check"> Remember Me</label>
                     </div>
                     <div class="two">
-                        <label><a href="#">Forgot Password?</a></label> 
+                        <label><a href="#">Terms & conditions</a></label> 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+ 
 </html>
